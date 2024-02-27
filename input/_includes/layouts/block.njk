@@ -1,5 +1,11 @@
+{% import "components/hero.njk" as components %}
+
 {% extends "layouts/default.njk" %}
 
 {% block content %}
-    
+    <main>
+        <section>
+            {{ components.hero(title, link) }}
+        </section>
+    </main>
 {% endblock content %}
