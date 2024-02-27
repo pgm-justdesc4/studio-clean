@@ -7,5 +7,12 @@
         <section>
             {{ components.hero(title, link) }}
         </section>
+        <section>
+            {% for image in images %}
+                <div>
+                    <img src="assets/images/{{ image.image }}" alt="{{ image.alt }}">
+                </div>
+            {% endfor %}
+        </section>
     </main>
 {% endblock content %}
