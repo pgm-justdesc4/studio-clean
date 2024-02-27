@@ -5,15 +5,15 @@
             </div>
             <ul>{% for page in collections.pages %}
                 <li>
-                    <a href="{{ page.url }}">{{ page.data.title }}</a>
+                    <a href="{{ page.url }}">{{ page.data.page_title }}</a>
                 </li>{% endfor %}
             </ul>
             <ul>
                 <li>
-                    <a href="#">Cookie Policy</a>
+                    <a href="/policies/cookies">Cookie Policy</a>
                 </li>
                 <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href="/policies/privacy">Privacy Policy</a>
                 </li>
             </ul>
         </nav>

@@ -1,18 +1,10 @@
-{% import "components/hero.njk" as components %}
+{% import "components/general.njk" as components %}
 
 {% extends "layouts/default.njk" %}
 
 {% block content %}
     <main>
-        <section>
-            {{ components.hero(title, link) }}
-        </section>
-        <section>
-            {% for image in images %}
-                <div>
-                    <img src="assets/images/{{ image.image }}" alt="{{ image.alt }}">
-                </div>
-            {% endfor %}
-        </section>
+        {{ components.hero(title, link) }}
+        {{ components.image(images)}}
     </main>
 {% endblock content %}
