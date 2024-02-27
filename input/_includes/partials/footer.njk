@@ -1,0 +1,20 @@
+<footer>
+        <nav>
+            <div class="logo">
+                <a href="/">Clean</a>
+            </div>
+            <ul>{% for page in collections.pages %}
+                <li>
+                    <a href="{{ page.url }}">{{ page.data.title }}</a>
+                </li>{% endfor %}
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">Cookie Policy</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
