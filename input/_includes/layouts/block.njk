@@ -4,7 +4,14 @@
 
 {% block content %}
     <main>
+        <section class="hero">
         {{ components.hero(title, link) }}
-        {{ components.image(images)}}
+        </section>
+        <section class="spotlight-img">
+            {{ components.image(images)}}
+        </section>
+
+        {% block bottom %}
+        {% endblock bottom %}
     </main>
 {% endblock content %}
