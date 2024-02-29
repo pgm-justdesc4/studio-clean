@@ -7,8 +7,8 @@
         <section class="hero">
             {{ components.hero(title) }}
         </section>
-        <section class="articles">
-            {{components.article(collections.blog)}}
-        </section>
+
+        {% block articles %}
+        {% endblock articles %}
     </main>
 {% endblock content %}

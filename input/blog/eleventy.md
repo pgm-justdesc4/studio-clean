@@ -1,11 +1,13 @@
 ---
 page_title: Eleventy
-tags: blog
+link: /blog/eleventy
 
-is_homepage: true
+tags: blog
+order: 1
+
+show_homepage: true
 
 title: Why 11ty rocks!
 description: "Eleventy is our favourite Static Site Generator, we'll tell you why."
 image: { img: Rectangle 2_5.png, alt: Rectangle 2_5 }
-link: /blog/eleventy
 ---

@@ -17,20 +17,18 @@
     </div>
 {% endmacro %}
 
-{% macro article(articles) %}
+{% macro article(post) %}
     <div class="container">
-        {% for article in articles %}
             <article>
-                <a href="{{article.data.link}}">
+                <a href="{{post.data.link}}">
                     <figure>
-                        <img src="/assets/images/{{article.data.image.img}}" alt="{{article.data.image.alt}}">
+                        <img src="/assets/images/{{post.data.image.img}}" alt="{{post.data.image.alt}}">
                     </figure>
-                    <h2>{{article.data.title}}</h2>
+                    <h2>{{post.data.title}}</h2>
                     <p>
-                    {{article.data.description}}
+                    {{post.data.description}}
                     </p>
                 </a>
             </article>
-        {% endfor %}
     </div>
 {% endmacro %}

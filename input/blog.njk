@@ -1,5 +1,4 @@
 ---
-layout: layouts/grid
 page_title: Blog
 tags: pages
 order: 2
@@ -127,3 +126,13 @@ articles: [{
     },
     ]
 ---
+
+{% extends "layouts/grid.njk" %}
+
+{% block articles %}
+    <section class="articles">
+        {% for post in collections.blog | sortByOrder %}
+            {{components.article(post)}}
+        {% endfor %}
+    </section>
+{% endblock articles %}

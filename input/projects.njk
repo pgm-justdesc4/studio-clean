@@ -105,3 +105,13 @@ articles: [{
     },
     ]
 ---
+
+{% extends "layouts/grid.njk" %}
+
+{% block articles %}
+    <section class="articles">
+        {% for post in collections.projects | sortByOrder %}
+            {{components.article(post)}}
+        {% endfor %}
+    </section>
+{% endblock articles %}
