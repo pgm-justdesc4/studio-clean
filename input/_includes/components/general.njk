@@ -18,17 +18,15 @@
 {% endmacro %}
 
 {% macro article(post) %}
-    <div class="container">
-            <article>
-                <a href="{{post.data.link}}">
-                    <figure>
-                        <img src="/assets/images/{{post.data.image.img}}" alt="{{post.data.image.alt}}">
-                    </figure>
-                    <h2>{{post.data.title}}</h2>
-                    <p>
-                    {{post.data.description}}
-                    </p>
-                </a>
-            </article>
-    </div>
+    <article>
+        <a href="{{post.data.link}}">
+            <figure>
+                <img src="/assets/images/{{post.data.image.img}}" alt="{{post.data.image.alt}}">
+            </figure>
+            <h2>{{post.data.title}}</h2>
+            <p>
+                {{post.data.description}}
+            </p>
+        </a>
+    </article>
 {% endmacro %}
