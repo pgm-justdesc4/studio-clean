@@ -13,4 +13,51 @@ images: [
 ]
 ---
 
+{% import "components/general.njk" as components %}
+
 {% extends "layouts/block.njk" %}
+
+{% block bottom %}
+    <section>
+        <div class="container">
+            <h2>Our projects</h2>
+            {% for project in collections.projects %}
+                {% if project.data.projectDate %}
+                    <div class="project">
+                    <div class="project__left">
+                        <ul>
+                            <li>
+                                <p>
+                                    {{ project.data.projectDate }}
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    {{ project.data.title }}
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project__right">
+                        <p>
+                            {{ project.data.description }}
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Read our latest news</h2>
+            {% for post in collections.blog %}
+                {% if post.data.is_homepage %}
+                {{components.article(collections.blog)}}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+{% endblock bottom %}

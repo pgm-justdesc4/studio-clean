@@ -21,13 +21,13 @@
     <div class="container">
         {% for article in articles %}
             <article>
-                <a href="{{article.link}}">
+                <a href="{{article.data.link}}">
                     <figure>
-                        <img src="/assets/images/{{article.image.img}}" alt="{{article.image.alt}}">
+                        <img src="/assets/images/{{article.data.image.img}}" alt="{{article.data.image.alt}}">
                     </figure>
-                    <h2>{{article.title}}</h2>
+                    <h2>{{article.data.title}}</h2>
                     <p>
-                    {{article.description}}
+                    {{article.data.description}}
                     </p>
                 </a>
             </article>
