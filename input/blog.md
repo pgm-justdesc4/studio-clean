@@ -1,6 +1,8 @@
 ---
+layout: layouts/grid
 page_title: Blog
 tags: pages
+order: 2
 
 title: Interested in what we have to say?
 
@@ -125,5 +127,3 @@ articles: [{
     },
     ]
 ---
-
-{% extends "layouts/grid.njk" %}
