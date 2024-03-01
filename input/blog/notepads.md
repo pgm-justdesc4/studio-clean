@@ -1,8 +1,8 @@
 ---
+layout: layouts/detail.njk
 page_title: Notepads
 link: /blog/notepads
 
-tags: blog
 order: 2
 
 show_homepage: true

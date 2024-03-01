@@ -1,5 +1,71 @@
 ---
 page_title: About
 tags: pages
+
 order: 4
+
+title: "We are a creative agency with talented people."
+link: {
+  url: "/contact",
+  text: "Contact us"
+}
+images: [
+  { image: "Image 1.png", alt: "Image 1" },
+  { image: "Image 2.png", alt: "Image 2" },
+  { image: "Image 1_1.png", alt: "Image 1_1" },
+  { image: "Image 2_1.png", alt: "Image 2_1" }
+]
+
+team: [
+    { 
+    name: "John Doe",
+    posistion: "Founder and CEO",
+    image: { img: "Rectangle 2.png", alt: "Rectangle 2" }
+    },
+
+    { 
+    name: "Mac Johnson",
+    posistion: "Prototyper",
+    image: { img: "Rectangle 2_1.png", alt: "Rectangle 2_1" }
+    },
+
+    { 
+    name: "Francis McDonald",
+    posistion: "Product Designer",
+    image: { img: "Rectangle 2_2.png", alt: "Rectangle 2_2" }
+    },
+
+    { 
+    name: "Jane Smith",
+    posistion: "Frontend Developer",
+    image: { img: "Rectangle 2_3.png", alt: "Rectangle 2_3" }
+    },
+
+    { 
+    name: "Mark Cuban",
+    posistion: "Back-end Developer",
+    image: { img: "Rectangle 2_4.png", alt: "Rectangle 2_4" }
+    },
+]
 ---
+
+{% extends "layouts/block.njk" %}
+
+{% block bottom %}
+    <section>
+        <div class="container">
+            <h2>Meet the team</h2>
+            <div class="team">
+                {% for person in team %}
+                    <figure>
+                        <img src="/assets/images/{{ person.image.img }}" alt="{{ person.image.alt }}">
+                        <figcaption>
+                            <h3>{{ person.name }}</h3>
+                            <p>{{ person.posistion }}</p>
+                        </figcaption>
+                    </figure>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock bottom %}

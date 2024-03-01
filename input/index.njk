@@ -1,6 +1,7 @@
 ---
 page_title: Home
 tags: pages
+
 order: 1
 
 title: We’re Clean, but we get our hands dirty.
@@ -22,7 +23,7 @@ images: [
         <div class="container">
             <h2>Our projects</h2>
             {% for project in collections.projects %}
-                {% if project.data.projectDate %}
+                {% if project.data.show_homepage %}
                 <div class="project">
                     <div class="project__left">
                         <ul>

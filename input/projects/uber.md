@@ -1,11 +1,12 @@
 ---
+layout: layouts/detail.njk
 page_title: Uber
 link: /projects/uber
 
-tags: projects
 order: 1
 
 show_homepage: true
+project: true
 
 title: Uber
 description: "Rebranding"

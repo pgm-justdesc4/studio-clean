@@ -1,8 +1,8 @@
 ---
+layout: layouts/detail.njk
 page_title: Design
 link: /blog/design
 
-tags: blog
 order: 3
 
 show_homepage: true

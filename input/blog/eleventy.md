@@ -1,8 +1,8 @@
 ---
+layout: layouts/detail.njk
 page_title: Eleventy
 link: /blog/eleventy
 
-tags: blog
 order: 1
 
 show_homepage: true

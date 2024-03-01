@@ -1,5 +1,70 @@
 ---
 page_title: Contact
 tags: pages
+
 order: 5
+
+title: Get in touch, we’ll get back to you.
+image: Rectangle 2_29.png
 ---
+
+{% import "components/general.njk" as components %}
+
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+    <main>
+        <section class="hero">
+            {{ components.hero(title) }}
+        </section>
+
+        <section>
+            <ul>
+                <li>
+                    <div>
+                        <p>
+                            Korenmarkt 12, 9000 Ghent, Belgium
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Adress
+                        </p>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <div>
+                        <p>
+                            info@clean.be
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Email
+                        </p>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <div>
+                        <p>
+                            +32 09 45 78 12
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Phone
+                        </p>
+                    </div>
+                </li>
+                <hr>
+            </ul>
+            <button class="button">
+                Send us an email
+            </button>
+        </section>
+
+        <img src="/assets/images/{{ image }}" alt="Image">
+    </main>
+{% endblock content %}
