@@ -12,9 +12,11 @@ title: Interested in what we have to say?
 {% block articles %}
     <section class="articles">
         <div class="container">
-            {% for post in collections.blog | sortByOrder %}
-                {{components.article(post)}}
-            {% endfor %}
+            <div class="articles">
+                {% for post in collections.blog | sortByOrder %}
+                    {{components.article(post)}}
+                {% endfor %}
+            </div>
         </div>
     </section>
 {% endblock articles %}

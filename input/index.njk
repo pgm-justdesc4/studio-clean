@@ -19,7 +19,7 @@ images: [
 {% extends "layouts/block.njk" %}
 
 {% block bottom %}
-    <section>
+    <section class="home-projects">
         <div class="container">
             <h2>Our projects</h2>
             {% for project in collections.projects %}
@@ -51,14 +51,16 @@ images: [
         </div>
     </section>
 
-    <section>
+    <section class="blog-spotlight">
         <div class="container">
             <h2>Read our latest news</h2>
-            {% for post in collections.blog | sortByOrder %}
-                {% if post.data.show_homepage %}
-                    {{components.article(post)}}
-                {% endif %}
-            {% endfor %}
+            <div class="articles">
+                {% for post in collections.blog | sortByOrder %}
+                    {% if post.data.show_homepage %}
+                        {{components.article(post)}}
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </section>
 {% endblock bottom %}

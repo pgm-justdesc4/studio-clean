@@ -1,17 +1,20 @@
 {% macro hero(title, link) %}
     <div class="container">
-        <h1>{{title}}</h1>
+        <div class="hero__title">
+            <h1>{{title}}</h1>
+        </div>
+        
 
         {% if link %}
         <div class="button">
             <a href="{{link.url}}">{{link.text}}</a>
         </div>
         {% endif %}
-        <hr>
     </div>
+    <hr>
 {% endmacro %}
 
-{% macro image(images) %}
+{% macro spotlight(images) %}
     <div class="container">{% for image in images %}
         <figure>
             <img src="/assets/images/{{ image.image }}" alt="{{ image.alt }}">
@@ -20,12 +23,12 @@
 {% endmacro %}
 
 {% macro article(post) %}
-    <article>
+    <article class="article-small">
         <a href="{{post.data.link}}">
             <figure>
                 <img src="/assets/images/{{post.data.image.img}}" alt="{{post.data.image.alt}}">
             </figure>
-            <h2>{{post.data.title}}</h2>
+            <h3>{{post.data.title}}</h3>
             <p>
                 {{post.data.description}}
             </p>
