@@ -29,12 +29,19 @@ body {
 }
 
 h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
   font-family: "Literata";
 }
 
 h2 {
   font-size: 2.5rem;
   font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 ul {
@@ -58,6 +65,11 @@ hr {
   border: 0.1rem solid black;
 }
 
+button {
+  cursor: pointer;
+  border: 0;
+}
+
 /*
 ===================================
 UTILITY CLASSES
@@ -75,7 +87,8 @@ UTILITY CLASSES
   border-radius: 2rem;
 }
 
-.button a {
+.button a,
+button {
   font-size: 1.35rem;
   color: white;
   padding: 1rem 2.75rem;
@@ -93,6 +106,10 @@ HEADER / FOOTER
 header,
 footer {
   margin: 1rem 0;
+}
+
+footer {
+  margin-top: 7rem;
 }
 
 header nav,
@@ -118,26 +135,76 @@ HERO
 ===================================
 */
 
+/* Hero - normal */
 .hero .container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin: 15rem auto;
+  margin: 10rem auto;
 }
 
-.hero__title {
-  max-width: 45rem;
+.hero .hero__title {
+  max-width: 60rem;
   line-height: 750%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.hero__title h1 {
+.hero .hero__title h1 {
   font-size: 7rem;
   font-weight: 400;
 }
 
+.hero hr {
+  margin-bottom: 3.5rem;
+}
+
+/* Hero - with Button */
+.hero--btn .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 10rem auto;
+}
+
+.hero--btn .hero__title {
+  max-width: 45rem;
+  line-height: 750%;
+  text-align: start;
+  margin: 0;
+}
+
+/* Hero - for Detail pages */
+.hero--detail .container {
+  text-align: center;
+}
+
+.hero--detail h1 {
+  font-size: 3.5rem;
+}
+
+.hero--detail span p {
+  margin: 3.5rem 0;
+}
+
+.hero--detail .return-btn {
+  margin-bottom: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero--detail .return-btn img {
+  width: 2rem;
+}
+
+.hero--detail .return-btn a {
+  font-size: 1.25rem;
+  color: black;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
 /*
 ===================================
-SPOTLIGHT IMAGES
+SPOTLIGHT IMAGES (Blog/About page)
 ===================================
 */
 
@@ -203,6 +270,7 @@ HOME
 ===================================
 */
 
+/* Projects */
 .home-projects {
   font-size: 1.2rem;
 }
@@ -223,6 +291,8 @@ HOME
 .home-projects .project {
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
+  color: black;
 }
 
 .home-projects .project__left ul {
@@ -230,10 +300,115 @@ HOME
   gap: 3.5rem;
 }
 
+/* Blog */
 .blog-spotlight .container {
   margin: 3.5rem auto;
 }
 
-.blog-spotlight h2 {
-  margin-bottom: 2rem;
+/*
+===================================
+ABOUT
+===================================
+*/
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+
+.team-member figure {
+  max-width: 30rem;
+  max-height: 20rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.team-member__info {
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.team-member__info h3 {
+  margin-bottom: 0.5rem;
+}
+
+/*
+===================================
+CONTACT
+===================================
+*/
+
+.contact {
+  text-align: right;
+  margin-top: 7rem;
+}
+
+.contact hr {
+  margin: 2.5rem 0;
+}
+
+.contact button {
+  margin-bottom: 3.5rem;
+}
+
+.contact figure {
+  max-height: 45rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.contact__info {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+===================================
+DETAIL PAGES / POLICIES
+===================================
+*/
+
+.single-column-content .container,
+.detail-content .container {
+  max-width: 50rem;
+}
+
+.single-column-content h1,
+.detail-content h1 {
+  margin: 1.5rem 0;
+  line-height: 110%;
+}
+
+.single-column-content h2,
+.detail-content h2 {
+  margin-top: 2.5rem;
+  line-height: 110%;
+}
+
+.detail-content img {
+  margin: 2rem 0;
+  border-radius: 2rem;
+}
+
+.feature-img figure {
+  width: 90%;
+  max-height: 30rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
 }

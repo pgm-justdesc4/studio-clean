@@ -1,5 +1,5 @@
 ---
-layout: layouts/hero-layout.njk
+layout: layouts/single-column.njk
 
 title: Nom, nom, nom. Let’s talk about cookies.
 ---

@@ -1,5 +1,5 @@
 ---
-layout: layouts/hero-layout.njk
+layout: layouts/single-column.njk
 
 title: Privacy matters, learn about our policy.
 ---

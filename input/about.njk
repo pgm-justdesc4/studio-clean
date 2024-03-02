@@ -54,16 +54,18 @@ team: [
 {% block bottom %}
     <section>
         <div class="container">
-            <h2>Meet the team</h2>
+            <h2>Meet the team</h1>
             <div class="team">
                 {% for person in team %}
-                    <figure>
-                        <img src="/assets/images/{{ person.image.img }}" alt="{{ person.image.alt }}">
-                        <figcaption>
+                    <div class="team-member">
+                        <figure>
+                            <img src="/assets/images/{{ person.image.img }}" alt="{{ person.image.alt }}">
+                        </figure>
+                        <div class="team-member__info">
                             <h3>{{ person.name }}</h3>
                             <p>{{ person.posistion }}</p>
-                        </figcaption>
-                    </figure>
+                        </div>
+                    </div>
                 {% endfor %}
             </div>
         </div>

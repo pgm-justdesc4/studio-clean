@@ -24,7 +24,7 @@ images: [
             <h2>Our projects</h2>
             {% for project in collections.projects %}
                 {% if project.data.show_homepage %}
-                <div class="project">
+                <a href="{{ project.data.link }}" class="project">
                     <div class="project__left">
                         <ul>
                             <li>
@@ -44,7 +44,7 @@ images: [
                             {{ project.data.description }}
                         </p>
                     </div>
-                </div>
+                </a>
                 <hr>
                 {% endif %}
             {% endfor %}

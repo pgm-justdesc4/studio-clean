@@ -1,0 +1,17 @@
+{% import "components/general.njk" as components %}
+
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+    <main>
+        <section class="hero">
+            {{ components.hero(title) }}
+        </section>
+
+        <section class="single-column-content">
+            <div class="container">
+                {{ content | safe }}
+            </div>
+        </section>
+    </main>
+{% endblock content %}

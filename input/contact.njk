@@ -13,58 +13,56 @@ image: Rectangle 2_29.png
 {% extends "layouts/default.njk" %}
 
 {% block content %}
-    <main>
-        <section class="hero">
+<main>
+    <section class="hero">
             {{ components.hero(title) }}
-        </section>
+    </section>
 
-        <section>
+    <section class="contact">
+        <div class="container">
             <ul>
                 <li>
-                    <div>
+                    <div class="contact__info">
                         <p>
                             Korenmarkt 12, 9000 Ghent, Belgium
                         </p>
-                    </div>
-                    <div>
                         <p>
                             Adress
                         </p>
                     </div>
+                    <hr>
                 </li>
-                <hr>
                 <li>
-                    <div>
+                    <div class="contact__info">
                         <p>
                             info@clean.be
                         </p>
-                    </div>
-                    <div>
                         <p>
                             Email
                         </p>
                     </div>
+                    <hr>
                 </li>
-                <hr>
                 <li>
-                    <div>
+                    <div class="contact__info">
                         <p>
                             +32 09 45 78 12
                         </p>
-                    </div>
-                    <div>
                         <p>
                             Phone
                         </p>
                     </div>
+                    <hr>
                 </li>
-                <hr>
             </ul>
             <button class="button">
                 Send us an email
             </button>
-        </section>
+            <figure>
+                <img src="/assets/images/{{ image }}" alt="Image">
+            </figure>
+        </div>
+    </section>
 
-        <img src="/assets/images/{{ image }}" alt="Image">
-    </main>
+</main>
 {% endblock content %}
