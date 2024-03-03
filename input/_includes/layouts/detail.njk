@@ -29,9 +29,15 @@
         {% if project %}
             <section class="feature-img">
                 <div class="container">
+                    {% if feature_img %}
+                    <figure>
+                        <img src="/assets/images/{{feature_img.img}}" alt="{{feature_img.alt}}">
+                    </figure>
+                    {% else %}
                     <figure>
                         <img src="/assets/images/{{image.img}}" alt="{{image.alt}}">
                     </figure>
+                    {% endif %}
                 </div>
             </section>
         {% endif %}

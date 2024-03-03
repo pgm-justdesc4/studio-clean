@@ -11,7 +11,8 @@ project: true
 title: Stonks
 description: "Webdesign"
 projectDate: 12.01.2024
-image: { img: Rectangle 2_17.png, alt: Rectangle 2_17 }
+image: { img: Rectangle 2_21.png, alt: Rectangle 2_21 }
+feature_img: { img: Rectangle 2_17.png, alt: Rectangle 2_17 }
 ---
 
 # Crafting a Stonks App Web Design
