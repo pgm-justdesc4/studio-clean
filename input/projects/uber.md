@@ -22,7 +22,7 @@ Uber, a global giant in the ride-sharing and transportation industry, recently u
 
 The most noticeable aspect of Uber's rebranding is its move towards simplicity. The new logo, a stylized "U," is a departure from the previous intricate design. This shift aligns with contemporary design trends that emphasize clean lines and minimalism. The simplicity of the logo enhances its versatility across various digital platforms and physical applications.
 
-<img src="/assets/images/Rectangle 3_4.png" alt="Rectangle 3_4">
+![Rectangle 3_4](/assets/images/Rectangle%203_4.png)
 
 # Dynamic Color Palette
 
@@ -32,4 +32,4 @@ Uber's rebranding introduces a dynamic color palette, moving away from the iconi
 
 The rebranding effort also emphasizes Uber's global presence. The universal appeal of the new design aims to transcend cultural and linguistic barriers. The simplified logo and vibrant colors contribute to a visual language that can resonate with users worldwide, irrespective of their background.
 
-<img src="/assets/images/Rectangle 4_2.png" alt="Rectangle 4_2">
+![Rectangle 4_2](/assets/images/Rectangle%204_2.png)

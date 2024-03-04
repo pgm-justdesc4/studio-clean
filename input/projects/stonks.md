@@ -33,11 +33,11 @@ Implement user profiles that allow for customization based on individual prefere
 
 Given the diverse devices used by investors, ensure the Stonks App's web design is responsive. A seamless experience across desktops, tablets, and smartphones is essential for user satisfaction. Responsive design not only accommodates various user preferences but also reinforces accessibility, a key consideration in modern web development.
 
-<img src="/assets/images/Rectangle 3_5.png" alt="Rectangle 3_5">
+![Rectangle 3_5](/assets/images/Rectangle%203_5.png)
 
 # Conclusion
 
 In designing the web interface for the Stonks App, the emphasis should be on creating a seamless, visually appealing, and functional experience for users navigating the complexities of the financial landscape. By prioritizing clear data presentation, intuitive navigation, and responsive design, the Stonks App can become a go-to platform for users seeking to stay informed and engaged in the world of investments.
 
-<img src="/assets/images/Rectangle 4_3.png" alt="Rectangle 4_3">
-<img src="/assets/images/Rectangle 5_1.png" alt="Rectangle 5_1">
+![Rectangle 4_3](/assets/images/Rectangle%204_3.png)
+![Rectangle 5_1](/assets/images/Rectangle%205_1.png)

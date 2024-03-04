@@ -16,7 +16,7 @@ image: { img: Rectangle 2_6.png, alt: Rectangle 2_6 }
 
 In the ever-expanding landscape of productivity applications, the return to basics signifies a focus on simplicity, functionality, and user-centered design. Let's explore the fundamental principles of app development by considering a minimalist approach, with a spotlight on essential features that enhance user experience.
 
-<img src="/assets/images/Rectangle 3_1.png" alt="Rectangle 3_1.png">
+![Rectangle 3_1](/assets/images/Rectangle%203_1.png)
 
 # Distraction-Free Note-Taking
 

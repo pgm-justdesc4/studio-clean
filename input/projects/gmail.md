@@ -19,7 +19,7 @@ feature_img: { img: Rectangle 2_18.png, alt: Rectangle 2_18 }
 
 Gmail, one of the most widely used email platforms, exemplifies a sophisticated and user-friendly web development approach. Exploring the key aspects of Gmail's web development provides valuable insights into creating seamless and efficient web applications.
 
-<img src="/assets/images/Rectangle 3_6.png" alt="Rectangle 3_6">
+![Rectangle 3_6](/assets/images/Rectangle%203_6.png)
 
 ## Robust and Responsive Design
 
