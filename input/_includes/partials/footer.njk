@@ -4,18 +4,19 @@
             <div class="logo">
                 <a href="/">Clean</a>
             </div>
-            <ul>{% for page in collections.pages %}
+            <ul>
+            {% for page in collections.pages %}
                 <li>
                     <a href="{{ page.url }}">{{ page.data.page_title }}</a>
-                </li>{% endfor %}
+                </li>
+            {% endfor %}
             </ul>
             <ul>
+            {% for page in collections.policies %}
                 <li>
-                    <a href="/policies/cookies">Cookie Policy</a>
+                    <a href="{{ page.url }}">{{ page.data.page_title }}</a>
                 </li>
-                <li>
-                    <a href="/policies/privacy">Privacy Policy</a>
-                </li>
+            {% endfor %}
             </ul>
         </nav>
     </div>

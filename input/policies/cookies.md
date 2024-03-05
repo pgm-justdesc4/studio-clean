@@ -1,6 +1,8 @@
 ---
 layout: layouts/single-column.njk
 
+page_title: Cookies Policy
+
 title: Nom, nom, nom. Let’s talk about cookies.
 ---
 

@@ -4,10 +4,12 @@
             <div class="logo">
                 <a href="/">Clean</a>
             </div>
-            <ul>{% for page in collections.pages | sortByOrder %}
+            <ul>
+            {% for page in collections.pages | sortByOrder %}
                 <li>
                     <a href="{{ page.url }}">{{ page.data.page_title }}</a>
-                </li>{% endfor %}
+                </li>
+            {% endfor %}
             </ul>
         </nav>
     </div>

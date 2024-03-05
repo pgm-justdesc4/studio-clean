@@ -15,10 +15,12 @@
 {% endmacro %}
 
 {% macro spotlight(images) %}
-    <div class="container">{% for image in images %}
+    <div class="container">
+    {% for image in images %}
         <figure>
             <img src="/assets/images/{{ image.image }}" alt="{{ image.alt }}">
-        </figure>{% endfor %}
+        </figure>
+    {% endfor %}
     </div>
 {% endmacro %}
 

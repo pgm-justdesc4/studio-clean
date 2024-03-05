@@ -1,6 +1,8 @@
 ---
 layout: layouts/single-column.njk
 
+page_title: Privacy Policy
+
 title: Privacy matters, learn about our policy.
 ---
 
