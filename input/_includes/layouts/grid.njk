@@ -8,7 +8,14 @@
             {{ components.hero(title) }}
         </section>
 
-        {% block articles %}
-        {% endblock articles %}
+        <section class="articles-list">
+        <div class="container">
+            <div class="articles">
+                {% for post in collections[collectionName] | sortByOrder %}
+                    {{components.article(post)}}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
     </main>
 {% endblock content %}
