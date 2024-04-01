@@ -24,16 +24,28 @@
     </div>
 {% endmacro %}
 
-{% macro article(post) %}
+{% macro article(post, link) %}
+    {% if link %}
     <article class="article-small">
-        <a href="{{post.data.link}}">
+        <a href="{{post.link}}">
             <figure>
-                <img src="/assets/images/{{post.data.image.img}}" alt="{{post.data.image.alt}}">
+                <img src="/assets/images/{{post.image.img}}" alt="{{post.image.alt}}">
             </figure>
-            <h3>{{post.data.title}}</h3>
+            <h3>{{post.title}}</h3>
             <p>
-                {{post.data.description}}
+                {{post.description}}
             </p>
         </a>
     </article>
+    {% else %}
+    <article class="article-small">
+        <figure>
+            <img src="/assets/images/{{post.image.img}}" alt="{{post.image.alt}}">
+        </figure>
+        <h3>{{post.name}}</h3>
+        <p>
+            {{post.position}}
+        </p>
+    </article>
+    {% endif %}
 {% endmacro %}

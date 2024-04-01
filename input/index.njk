@@ -55,7 +55,7 @@ images: [
             <div class="articles">
                 {% for post in collections.blog | sortByOrder %}
                     {% if post.data.show_homepage %}
-                        {{components.article(post)}}
+                        {{components.article(post.data, post.data.link)}}
                     {% endif %}
                 {% endfor %}
             </div>

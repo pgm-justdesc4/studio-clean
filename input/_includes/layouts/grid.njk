@@ -12,7 +12,7 @@
         <div class="container">
             <div class="articles">
                 {% for post in collections[collectionName] | sortByOrder %}
-                    {{components.article(post)}}
+                    {{components.article(post.data, post.data.link)}}
                 {% endfor %}
             </div>
         </div>
