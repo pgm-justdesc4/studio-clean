@@ -9,6 +9,7 @@ image: Rectangle 2_29.png
 ---
 
 {% import "components/general.njk" as components %}
+{% set contact = site.contact %}
 
 {% extends "layouts/default.njk" %}
 
@@ -20,41 +21,7 @@ image: Rectangle 2_29.png
 
     <section class="contact">
         <div class="container">
-            <ul>
-                <li>
-                    <div class="contact__info">
-                        <p>
-                            Korenmarkt 12, 9000 Ghent, Belgium
-                        </p>
-                        <p>
-                            Adress
-                        </p>
-                    </div>
-                    <hr>
-                </li>
-                <li>
-                    <div class="contact__info">
-                        <p>
-                            info@clean.be
-                        </p>
-                        <p>
-                            Email
-                        </p>
-                    </div>
-                    <hr>
-                </li>
-                <li>
-                    <div class="contact__info">
-                        <p>
-                            +32 09 45 78 12
-                        </p>
-                        <p>
-                            Phone
-                        </p>
-                    </div>
-                    <hr>
-                </li>
-            </ul>
+            {{ components.contactList(contact) }}
             <button class="button">
                 Send us an email
             </button>

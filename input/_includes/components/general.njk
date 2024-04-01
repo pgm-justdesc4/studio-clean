@@ -49,3 +49,41 @@
     </article>
     {% endif %}
 {% endmacro %}
+
+{% macro contactList(contactInfo) %}
+    <ul>
+        <li>
+            <div class="contact__info">
+                <p>
+                    {{ contactInfo.address }}
+                </p>
+                <p>
+                    Address
+                </p>
+            </div>
+            <hr>
+        </li>
+        <li>
+            <div class="contact__info">
+                <p>
+                    {{ contactInfo.email }}
+                </p>
+                <p>
+                    Email
+                </p>
+            </div>
+            <hr>
+        </li>
+        <li>
+            <div class="contact__info">
+                <p>
+                    {{ contactInfo.phone }}
+                </p>
+                <p>
+                    Phone
+                </p>
+            </div>
+            <hr>
+        </li>
+    </ul>
+{% endmacro %}
