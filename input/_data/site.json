@@ -8,31 +8,31 @@
   "team": [
     {
       "name": "John Doe",
-      "posistion": "Founder and CEO",
+      "position": "Founder and CEO",
       "image": { "img": "Rectangle 2.png", "alt": "Rectangle 2" }
     },
 
     {
       "name": "Mac Johnson",
-      "posistion": "Prototyper",
+      "position": "Prototyper",
       "image": { "img": "Rectangle 2_1.png", "alt": "Rectangle 2_1" }
     },
 
     {
       "name": "Francis McDonald",
-      "posistion": "Product Designer",
+      "position": "Product Designer",
       "image": { "img": "Rectangle 2_2.png", "alt": "Rectangle 2_2" }
     },
 
     {
       "name": "Jane Smith",
-      "posistion": "Frontend Developer",
+      "position": "Frontend Developer",
       "image": { "img": "Rectangle 2_3.png", "alt": "Rectangle 2_3" }
     },
 
     {
       "name": "Mark Cuban",
-      "posistion": "Back-end Developer",
+      "position": "Back-end Developer",
       "image": { "img": "Rectangle 2_4.png", "alt": "Rectangle 2_4" }
     }
   ]
